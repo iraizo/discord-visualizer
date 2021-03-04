@@ -8,6 +8,9 @@ client = redis.Redis(host="127.0.0.1", port=6379,
 
 array = client.lrange("messages", 0, -1)
 
+min_letter_length = 3
+min_occurrences = 20
+
 
 def parse_data(array):
 
@@ -33,7 +36,8 @@ def generate_graph():
     # count appearences of strings
 
     for ele in counter:
-        if counter[ele] > 50:
+        if counter[ele] > min_occurrences and len(ele) > min_occurrences:
+            print(len(ele))
             x.append(ele)
             y.append(counter[ele])
 
