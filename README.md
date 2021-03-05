@@ -13,3 +13,8 @@ that file also has a search function to check what messages a word has been used
 
  This data shows general english terms, which you can filter out, or i will add it later on.  
  You can also add in any filters you want to since the source code is easy to read
+
+### Todo
+ - Cache all discord messages in a server [ ]
+ - Add configuration file [ ]
+ - Add setup instructions [ ]
